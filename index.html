@@ -28,7 +28,7 @@
           background-image: url("Images/HeaderBackground.png");
           margin-bottom: 0px;
         }
-        #SubHeader
+        .SubHeader
         {
           background-color: #fff;
           margin: 0px;
@@ -42,6 +42,7 @@
           color: #fff;
           text-align: center;
         }
+
         .jumbotron h2 {
           color: #3b3636;
           text-align: center;
@@ -72,6 +73,14 @@
           color: white;
           text-decoration: underline;
         }
+
+        a.actionLink , a.actionLink a.actionLink:link, a.actionLink:visited, 
+        a.actionLink:hover, a.actionLink:active 
+        {
+          color: #3b3636 !important;
+          text-decoration: underline !important;
+        }
+
       </style>
     </head>
     <body>
@@ -82,9 +91,9 @@
           </h1>
         </div>
       </div>
-      <div id="SubHeader" class="jumbotron">
+      <div class="SubHeader jumbotron">
         <div class="container">
-          <h2 class="subtitle">Raul <span id="actionWord">codes</span>.</h2>
+          <h2 class="subtitle">Raul <span id="actionWord">Codes</span></h2>
           <h2 class="subtitle">Raul wants to solve your problems with the best tool for the job.</h2>
         </div>
       </div>
@@ -96,7 +105,7 @@
          </div>
          <div class="col-sm-6 col-xs-12 actionDescription">
            <h3>Codes</h3>
-           Raul decided to actually follow through on one of his side project ideas and created <a href="http://Everblog.us">Everblog.us</a>, one of the easiest ways to start blogging with Evernote. He also takes a swing at Google's annual <a href="https://bitbucket.org/raultorres88/google2013">Code Jam</a>.
+           Raul decided to actually follow through on one of his side project ideas and created <a href="http://Everblog.us">Everblog.us</a>, one of the easiest ways to start blogging with Evernote, for the 2012 Evernote Dev Cup. Every year he takes a swing at Google's annual <a href="https://bitbucket.org/raultorres88/google2013">Code Jam</a>. When Raul has some down time he like to test out new user interfaces like Leap Motion and <a href="https://youtu.be/A2SCROiZK3I">Kinect</a>.
          </div>
        </div>
        <div class="row">
@@ -116,13 +125,19 @@
          </div>
        </div>
      </div>
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-     <!-- Include all compiled plugins (below), or include individual files as needed -->
-     <script src="bootstrap/js/bootstrap.min.js"></script>
+     <div class="SubHeader jumbotron">
+      <div class="container">
+        <h2 class="subtitle">Raul Emails</h2>
+        <h2 class="subtitle">Let's <a class="actionLink" href="mailto:raultorres88@gmail.com">get in touch</a> and change the world. </h2>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-     <script type="text/javascript">
-      var actionWords = ['codes', 'works', 'tweets', 'reads'];
+    <script type="text/javascript">
+      var actionWords = ['Codes','Learns At SXSW', 'Works', 'Tweets', 'Reads'];
       var wordIndex = 1;
 
       $( document ).ready(function() {
